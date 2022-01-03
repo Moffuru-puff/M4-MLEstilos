@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --yellow : #EAC926;
+    --blue : #03264C;
+    --lightBlue : #1259c3;
+    --darkGrey : #666;
+    --lightGrey : #ebebeb;
+    --green : #39b54a;
+    /* Fonts */
+    --font-primary : 'Roboto', sans-serif;
+    /* Font size */
+    --paragraph : 12px;
+    --title : 24px;
+    --prices : 18px;
+    --dues : 14px;
+    --description : 16px
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section {
+    width: 90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main section article {
+    border: 1px solid var(--lightGrey);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 10px 5px 5px #00000042;
+}
+
+main section article div .precio{
+    font-size: var(--prices);
+    display: flex;
+}
+
+main section article div .descu {
+    color: var(--green);
+    display: flex;
+    font-size: var(--dues);
+}
+
+
+main section article div .descri {
+    font-size: var(--description);
+    color: grey;
+    padding-top: 15px;
+    display: flex;
+}
+
+main section article div i {
+    color: var(--green);
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--green);
+    border-radius: 2rem;
+}
+
+#truck {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main section article div.caja {
+    border: 1px solid var(--lightGrey);
+    width: 100%;
+    padding: 15px;
+}
+
+.banner {
+    display: none;
+}
+
+.mb-10 {
+    margin-bottom: 15px;
+}
+
+/**********/
+/* HEADER */
+/**********/
+
+header .burger-menu {
+    width: 30px;
+    height: 35px;
+    background-color: var(--lightBlue);
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--yellow);
+    padding-bottom: 20px;
+    font-size: var(--paragraph);
+}
+
+header .dues {
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+
+.logo {
+    width:150px;
+    padding: 25px 0 0 25px;
+}
+
+.search-bar input {
+    margin-left: 10px;
+}
+
+p span {
+    display: block;
+  }
+
+/**********/
+/* FOOTER */
+/**********/
+
+footer {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+footer p {
+    font-size: var(--paragraph);
+    padding: 0px 30px 30px 30px;
+}
+
+footer h4 {
+    font-size: var(--description);
+}
+
+footer div {
+    margin: 0 auto;
+}
+
+
+.icon i {
+    font-size: 2em;
+    color: var(--lightBlue);
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: var(--darkGrey);
+}
